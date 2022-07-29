@@ -37,12 +37,12 @@ print(f'O menor valor de faturamento do mês foi de: {smaller}.')
 print(f'O maior valor de faturamento do mês foi de: {larger}.')
 
 media = sum1 / len(data)
-billing_days = ''
+billing_days = 0
 
 for i in data:
     if (i['valor']) != 0:
 
         if (i['valor']) > media:
-            billing_days += i['dia'] + ' '
+            billing_days += i['dia']
 
-print(f'Dias em que o faturamento foi maior que a média mensal: {billing_days}')
+print(f'Dias em que o faturamento foi maior que a média mensal: {billing_days} dias.')
